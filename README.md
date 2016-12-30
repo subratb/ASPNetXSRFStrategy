@@ -11,3 +11,7 @@ hidden form field.
 
 The action methods, which needs to be protected against XSRF can then specify ValidateHttpAntiForgeryTokenAttribute, 
 also included here. This checks for the cookie and the matching header value to enable XSRF protection.
+
+In the application module provider section include ASPNetXSRFStrategy as shown below.
+
+{ provide: XSRFStrategy, useValue: new ASPNetXSRFStrategy() }
