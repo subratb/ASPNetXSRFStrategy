@@ -9,7 +9,7 @@ import { XSRFStrategy, Request } from '@angular/http';
  * To know more about this feature go to https://angular.io/docs/ts/latest/guide/security.html#!#http.
  * The ASP.Net MVC page which expects cookie and header must set the AntiForgeryToken by calling `@Html.AntiForgeryToken()`.
  * This call to '@Html.AntiForgeryToken()` sets up the cookie and hidden form field. Cookie is automatically sent
- * by the request, whereas we retrieve the hidden for field value here and append the same as a header to the request.
+ * by the request, whereas we retrieve the hidden form field value here and append the same as a header to the request.
 */
 export class ASPNetXSRFStrategy implements XSRFStrategy {
     constructor(
